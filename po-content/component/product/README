@@ -1,0 +1,49 @@
+/*
+ *
+ * - Component Video
+ *
+ * - Author : Jenuar Dalapang
+ * - Contact : djenuar@gmail.com
+ * - License : MIT License
+ *
+*/
+
+Cara memasang komponen video ini :
+
+1. Extract file component-video.zip yang telah di download.
+
+2. Login ke halaman admin web Anda, kemudian ke menu Komponen --> Tambah Baru
+
+3. Isi form Tambah Baru seperti ini :
+
+-- Nama Komponen : video
+-- Tipe : Component
+-- Berkas Komponen (.zip) : Isikan dengan file video.zip hasil extract tadi
+
+Setelah menekan tombol submit maka halaman akan mengarah ke list tabel komponen, jika komponen video sudah ada berarti Anda telah berhasil memasangannya.
+
+4. Buat tabel baru pada database, pembuatan tabel baru ini bisa melalui phpmyadmin dengan cara penambahan tabel dan field manual atau langsung dengan script sql di bawah ini :
+
+DROP TABLE IF EXISTS `video`;
+
+CREATE TABLE IF NOT EXISTS `video` (
+  `id_video` int(5) NOT NULL AUTO_INCREMENT,
+  `title` varchar(255) NOT NULL,
+  `date` date NOT NULL,
+  `url` varchar(255) NOT NULL,
+  `headline` enum('Y','N') NOT NULL DEFAULT 'Y',
+  PRIMARY KEY (`id_video`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 ;
+
+5. Agar komponen video bisa diakses pada halaman admin, maka berikan dulu permission CRUD component lewat pengaturan di level pengguna terus berikan saja akses ke level superadmin dulu. (Klik menu Pengguna lalu pilih Semua Pengguna terus klik tombol Level Pengguna)
+
+6. Tambahkan menu komponen video pada halaman admin lewat Menu Manager pada group menu Dashboard :
+
+Title : Video
+URL : admin.php?mod=video
+Class : 
+
+7. Tambahkan juga menu video pada halaman depan lewat Menu Manager pada group id dan gb (default)
+
+8. Langkah terakhir copy file video.php hasil extract tadi ke dalam folder po-content/themes/folderthemeactive/
+

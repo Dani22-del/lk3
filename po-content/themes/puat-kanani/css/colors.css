@@ -1,0 +1,77 @@
+/*------------------------------------------------------------------
+
+[Table of contents]
+
+1.	Text color
+	Links
+	Main navigation hover
+	Logo text
+	Copyright hover
+	Pullquotes
+	BLockquotes
+	Counter numbers
+2.	Background color
+	Category link
+	Widget tags hover
+	Review line
+	Post share button
+3.	Border color
+	Main navigation underline
+	Category outline
+	Left border for block titles
+	Triangle for category icon
+	Thumnbnail slider underline
+	Blockquiote
+	404 Back link
+4.	Rating stars color
+
+-------------------------------------------------------------------*/
+
+/*------------------------------------------------------------------
+    1. Text color
+-------------------------------------------------------------------*/
+a,
+#cs-top-navigation .cs-top-navigation > li > a:hover,
+#cs-logo-brand h1#cs-site-title span,
+#cs-copyright a:hover,
+.cs-post-category-empty a,
+.cs-post-item .cs-post-inner h3 a:hover,
+.pullquotes,
+blockquote.alt i,
+blockquote footer strong,
+.cs-countdown-number {
+	color: #9c8dc1
+}
+
+/*------------------------------------------------------------------
+    2. Background color
+-------------------------------------------------------------------*/
+.cs-post-category-solid a,
+.widget_tag_cloud .tagcloud a:hover,
+#cs-footer .widget_tag_cloud .tagcloud a:hover,
+.cs-review-score-line-active,
+.cs-single-post-share a,
+.cs-reply:hover {
+	background-color: #9c8dc1
+}
+
+/*------------------------------------------------------------------
+    3. Border color
+-------------------------------------------------------------------*/
+#cs-main-navigation .cs-main-navigation > li.current-menu-item > a,
+#cs-main-navigation .cs-main-navigation > li:hover > a,
+.cs-post-category-border a,
+.cs-post-block-title,
+.cs-post-item .cs-post-category-icon,
+.cs-thumbnail-slider .cs-gallery-thumbs .swiper-slide-active,
+blockquote,
+.cs-404-page-back-link {
+	border-color: #9c8dc1
+}
+
+/*------------------------------------------------------------------
+    4. Rating stars color
+-------------------------------------------------------------------*/
+.cs-post-meta-rating span:before {
+	color: #9c8dc1
+}

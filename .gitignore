@@ -1,0 +1,21 @@
+# Sistem / editor
+.history/
+.vscode/
+.idea/
+.DS_Store
+
+# File hosting
+error_log
+.ftpquota
+.user.ini
+php.ini
+
+# Zip & backup
+*.zip
+
+# Cache / temp
+.well-known/
+
+# Vendor
+vendor/
+node_modules/
