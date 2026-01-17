@@ -28,12 +28,12 @@ define('DIR_INC', $site['inc']);
 // $db['passwd'] = "6(o#L81F[#FO";
 // $db['db'] = "lktranni_lk3indonesia";
 
-$db['host'] = "192.168.2.111";
+$db['host'] = "localhost";
 $db['driver'] = "mysql";
 $db['sock'] = "";
 $db['port'] = "3306";   
-$db['user'] = "natusi102";  // DEFAULT LARAGON
-$db['passwd'] = "natusi102";    // DEFAULT LARAGON (kosong)
+$db['user'] = "root";  // DEFAULT LARAGON
+$db['passwd'] = "";    // DEFAULT LARAGON (kosong)
 $db['db'] = "lktranni_lk3indonesia";
 
 define('DATABASE_HOST', $db['host']);
