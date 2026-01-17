@@ -17,5 +17,5 @@ php.ini
 .well-known/
 
 # Vendor
-vendor/
+# vendor/
 node_modules/
